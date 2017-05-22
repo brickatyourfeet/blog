@@ -1,0 +1,21 @@
+
+CREATE TABLE blogtable(
+	blogid int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	blogtitle text,
+	blogbody longtext,
+	userid int NOT NULL,
+	isactive tinyint,
+	createdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+CREATE TABLE user (
+    userid int  PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    firstname varchar(100),
+    middleinitial varchar(2),
+    lastname varchar(255),
+    username varchar(255),
+    userpassword varchar(255),
+    email varchar(255),
+    userbio longtext,
+    image longtext
+    )
